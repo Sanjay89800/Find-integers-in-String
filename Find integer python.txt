@@ -1,0 +1,26 @@
+# python program to find integers in string and add found integers
+
+string=""""""
+
+def findint(string):   
+    string=str(input("enter string:"))
+    
+    stringlist=string.split()                             # to convert string in list
+                        
+    intlist=[]
+    count=0
+    
+    for item in stringlist:                         
+        
+        if item.isdigit():                                 #to find integers in list
+            item=int(item)
+            count+=1
+            intlist.append(item)
+    
+    print("intigers found:",count)       
+    print("list of intigers:",intlist)
+    
+    add=sum(intlist)                                       #for add all integers in list
+    print("sum of intigers which found in string",add)
+    
+findint(string)                                           #for call function
